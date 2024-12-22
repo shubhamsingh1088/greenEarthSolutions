@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" (click)="collapseNavbar()" [routerLink]="['/home']">
+            <img ngSrc="./assets/logo.png" class="logo" style="width: 70px; height: 55px; background-color: transparent;" priority fill>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent" #navbarSupportedContent>
+            <ul class="navbar-nav">
+                <br>
+                <!-- <li class="nav-item">
+                    <a class="nav-link fw-semibold" aria-current="page" (click)="collapseNavbar()" [routerLink]="['/projects']">PROJECTS</a>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link fw-semibold" (click)="collapseNavbar()" [routerLink]="['/blog']">BLOG</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link fw-semibold" (click)="collapseNavbar()" [routerLink]="['/home']">
+                        HOME
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link fw-semibold dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        SERVICES
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" (click)="collapseNavbar()">Civil Construction</a></li>
+                        <li><a class="dropdown-item" (click)="collapseNavbar()">Interior Designing</a></li>
+                        <li><a class="dropdown-item" (click)="collapseNavbar()">Architecture</a></li>
+                        <li><a class="dropdown-item" (click)="collapseNavbar()">Water Proofing</a></li>
+                        <li><a class="dropdown-item" (click)="collapseNavbar()">Cost Estimation</a></li>
+                        <li><a class="dropdown-item" (click)="collapseNavbar()">Consultancy</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link fw-semibold" (click)="collapseNavbar()" [routerLink]="['/about-us']">
+                        ABOUT-US
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" (click)="collapseNavbar()" [routerLink]="['/contact']">CONTACT</a>
+                </li>
+            </ul>
+            <!-- <form class="d-flex" role="search" style="margin: 8px;">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form> -->
+        </div>
+    </div>
+</nav>

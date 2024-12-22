@@ -1,0 +1,99 @@
+.about {
+    margin-top: 100px;
+}
+
+/* .header {
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    background: rgb(170,197,39);
+    background: radial-gradient(circle, rgba(170,197,39,1) 0%, rgba(249,252,249,1) 100%);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 4px 6px;
+}
+
+.office-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+} */
+
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-container::before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background: url('/assets/office/4.1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.header {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 5px;
+    background: rgb(170,197,39);
+    background: radial-gradient(circle, rgba(170,197,39,1) 0%, rgba(249,252,249,1) 100%);
+    padding: 24px 16px;
+}
+
+@media screen and (max-width: 480px) {
+    .image-container::before {
+        content: "";
+        display: block;
+        width: 100%;
+        background: none;
+        /* background-size: cover; */
+    }
+    .header {
+        /* position: absolute;
+        top: 10%;
+        left: 50%; */
+        transform: translate(-50%, -50%);
+        width: 90%;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 1.5em;
+        background: seagreen;
+        text-align: left;
+        border-radius: 5px;
+        /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(166,226,229,1) 0%, rgba(198,232,221,1) 100.2% ); */
+        padding: 24px 16px;
+        margin-top: 90px;
+    }
+}
+
+.about ul {
+    margin-bottom: 30px;
+}
+.about li {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}

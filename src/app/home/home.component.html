@@ -1,0 +1,193 @@
+<section class="container-fluid">
+    <div class="row carousel">
+        <div class="col-md-12">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="hover">
+                <div class="carousel-indicators">
+                    <button *ngFor="let image of images; let i = index" type="button" [attr.data-bs-slide-to]="i"
+                        data-bs-target="#carouselExampleFade" [class.active]="i === 0"
+                        [attr.aria-label]="'Slide ' + (i + 1)"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div *ngFor="let image of images; let i = index" class="carousel-item" [class.active]="i === 0">
+                        <img [src]="image.src" class="d-block w-100" [alt]="image.alt" [attr.loading]="i === 0 || i === 1 ? 'eager' : 'lazy'">
+                        <div class="carousel-caption d-md-block animate__animated animate__bounce">
+                            <h5>{{ image.title }}</h5>
+                            <p>{{ image.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid">
+    <div class="screen-container">
+        <div class="left-panel">
+            <h1 class="headline">Expert Construction Works</h1>
+            <p class="message">
+                Leading in sustainable development, we focus on <strong>green buildings</strong> and
+                <strong>eco-friendly
+                    construction</strong> to reduce environmental impact. Our projects use energy-efficient designs and
+                materials to
+                create durable, resource-conserving structures for a greener future.
+            </p>
+        </div>
+
+        <div class="right-panel">
+            <div class="video-container" style="margin-top: 100px; border-radius: 10px;">
+                <video controls>
+                    <source src="{{'./assets/abc.MP4'}}" type="video/MP4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="ourServices">
+    <h3 class="services">OUR <span style="color: #000;">SERVICES</span></h3>
+</div>
+
+<section class="d-flex justify-content-around">
+    <div class="card">
+        <img src="./assets/home/civilCon.jpg" class="card-img-top" alt="Image">
+        <div class="card-body">
+            <h2 class="card-title badge bg-success text-wrap">Civil Construction</h2>
+            <p class="card-text text-capitalize">Building tomorrow’s landmarks today.<br> partner with us for
+                innovative, sustainable, and reliable civil construction solutions.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Compound Wall Brick Work</li>
+            <li class="list-group-item">Renovation Work</li>
+            <li class="list-group-item">3D elevation</li>
+        </ul>
+        <div class="card-body">
+            <a class="card-link">Learn More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./assets/home/6.jpg" class="card-img-top" alt="Image">
+        <div class="card-body">
+            <h2 class="card-title badge bg-success text-wrap">Interior Designing</h2>
+            <p class="card-text text-capitalize">We go beyond structures, bringing harmony to your home through
+                personalized interior design solutions.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Customized Interior Solutions</li>
+            <li class="list-group-item">Space Optimization Designs</li>
+            <li class="list-group-item">Creative Lighting Solutions</li>
+        </ul>
+        <div class="card-body">
+            <a [routerLink]="['/services/interior-designing']" class="card-link">Learn More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./assets/home/architecture.jpg" class="card-img-top" alt="Image">
+        <div class="card-body">
+            <h5 class="card-title badge bg-success text-wrap">Architecture[2D, 3D]</h5>
+            <p class="card-text text-capitalize">
+                From concept to construction, our architects redefine spaces, blending form and function for enduring
+                designs.
+            </p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Detailed Architectural Drafting Services</li>
+            <li class="list-group-item">Comprehensive 2D Floor Plans and Elevations</li>
+            <li class="list-group-item">Conceptual 3D Architectural Models</li>
+        </ul>
+        <div class="card-body">
+            <a [routerLink]="['/services/architecture']" class="card-link">Learn More</a>
+        </div>
+    </div>
+</section>
+<section class="d-flex justify-content-around" style="margin: 50px 0 50px 0;">
+    <div class="card">
+        <img src="./assets/home/waterProofing.jpg" class="card-img-top" alt="Image">
+        <div class="card-body">
+            <h5 class="card-title badge bg-success text-wrap">Water Proofing</h5>
+            <p class="card-text text-capitalize">
+                Explore our comprehensive water-proofing services designed to safeguard your construction projects from
+                water damage, leaks, and structural deterioration.
+            </p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Terrace and Roof Waterproofing Services</li>
+            <li class="list-group-item">Crack Repair and Sealing</li>
+            <li class="list-group-item">Expert Consultation on Waterproofing Solutions</li>
+        </ul>
+        <div class="card-body">
+            <a class="card-link">Learn More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./assets/home/1.jpg" class="card-img-top" alt="Image">
+        <div class="card-body">
+            <h5 class="card-title badge bg-success text-wrap">Cost Estimation & Evaluation</h5>
+            <p class="card-text text-capitalize">
+                Our team prioritizes transparency and accountability in cost evaluation, providing you with a clear
+                understanding of your project's financial landscape.
+            </p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Accurate Cost Estimation Services for Construction Projects</li>
+            <li class="list-group-item">Detailed Material and Labor Cost Analysis</li>
+            <li class="list-group-item">Comprehensive Budget Planning and Management</li>
+        </ul>
+        <div class="card-body">
+            <a class="card-link">Learn More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./assets/home/consultancy.jpg" class="card-img-top" alt="Image">
+        <div class="card-body">
+            <h5 class="card-title badge bg-success text-wrap">Consultancy</h5>
+            <p class="card-text text-capitalize">
+                Partner with our consultancy services to benefit from strategic insights, innovative solutions, and
+                expert guidance that elevate your projects to new heights.
+            </p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Expert Consultation Services for Construction and Design Projects</li>
+            <li class="list-group-item">Cost-effective Solutions to Improve Project Efficiency</li>
+            <li class="list-group-item">Tailored Solutions to Meet Client's Specific Needs</li>
+        </ul>
+        <div class="card-body">
+            <a class="card-link">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<div class="ourOffice">
+    <h3 class="officeHeading">OUR <span style="color: #000;">OFFICE</span></h3>
+</div>
+<section>
+    <div class="office">
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="assets/office/1.jpg" alt="Team Member 1">
+                <!-- <p>Team Member 1</p> -->
+            </div>
+            <div class="image-item">
+                <img src="assets/office/7.jpg" alt="Team Member 5">
+                <!-- <p>Team Member 5</p> -->
+            </div>
+            <div class="image-item">
+                <img src="assets/office/8.jpg" alt="Team Member 6">
+                <!-- <p>Team Member 6</p> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- npx angular-cli-ghpages --dir=docs -->

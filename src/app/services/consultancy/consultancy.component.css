@@ -1,0 +1,30 @@
+.background-container {
+    height: auto;
+    padding: 90px;
+    @media only screen and (max-width: 767px) {
+        height: auto;
+        padding: 0 0 40px 0;
+    }
+}
+
+.header {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 68px;
+    background: rgb(238,174,201);
+    background: linear-gradient(90deg, rgba(238,174,201,0.2497373949579832) 0%, rgba(148,233,179,1) 100%);
+    color: #000;
+    padding: 12px 14px;
+    border-radius: 5px;
+    @media only screen and (max-width: 767px) {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 28px;
+        background: rgb(238,174,201);
+        background: linear-gradient(90deg, rgba(238,174,201,0.2497373949579832) 0%, rgba(148,233,179,1) 100%);
+        color: #000;
+        padding: 12px 14px;
+        border-radius: 5px;
+        margin-top: 50px;
+    }
+}
