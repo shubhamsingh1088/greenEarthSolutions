@@ -1,7 +1,8 @@
 <section class="container-fluid">
     <div class="row carousel">
         <div class="col-md-12">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="hover">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                data-bs-pause="hover">
                 <div class="carousel-indicators">
                     <button *ngFor="let image of images; let i = index" type="button" [attr.data-bs-slide-to]="i"
                         data-bs-target="#carouselExampleFade" [class.active]="i === 0"
@@ -9,7 +10,8 @@
                 </div>
                 <div class="carousel-inner">
                     <div *ngFor="let image of images; let i = index" class="carousel-item" [class.active]="i === 0">
-                        <img [src]="image.src" class="d-block w-100" [alt]="image.alt" [attr.loading]="i === 0 || i === 1 ? 'eager' : 'lazy'">
+                        <img [src]="image.src" class="d-block w-100" [alt]="image.alt"
+                            [attr.loading]="i === 0 || i === 1 ? 'eager' : 'lazy'">
                         <div class="carousel-caption d-md-block animate__animated animate__bounce">
                             <h5>{{ image.title }}</h5>
                             <p>{{ image.description }}</p>
@@ -46,11 +48,10 @@
 
         <div class="right-panel">
             <div class="video-container" style="margin-top: 100px; border-radius: 10px;">
-                <video controls>
-                    <source src="https://drive.google.com/file/d/1nxA71cu_LphT8okLITIlVZTVMXvUC8Ao/view?usp=drive_link"
-                        type="video/MP4">
-                    Your browser does not support the video tag.
-                </video>
+                <iframe src="https://drive.google.com/file/d/1nxA71cu_LphT8okLITIlVZTVMXvUC8Ao/preview" 
+                        width="640" height="480" 
+                        allow="autoplay" 
+                        allowfullscreen></iframe>
             </div>
         </div>
     </div>
