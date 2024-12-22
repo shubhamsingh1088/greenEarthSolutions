@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "gh-build": "ng build --output-path=docs --base-href=/https://greenearthsolutionsraipur.com//",
+    "host": "npx angular-cli-ghpages --dir=docs/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
