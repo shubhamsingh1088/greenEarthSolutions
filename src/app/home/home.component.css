@@ -1,15 +1,16 @@
-
 .carousel-caption {
     color: #f2f2f2;
-    background: rgb(75,195,34);
-    background: linear-gradient(0deg, rgba(75,195,34,0.7008053221288515) 0%, rgba(253,187,45,0.5551470588235294) 100%);
+    background: rgb(75, 195, 34);
+    background: linear-gradient(0deg, rgba(75, 195, 34, 0.7008053221288515) 0%, rgba(253, 187, 45, 0.5551470588235294) 100%);
     border-radius: 10px;
 }
+
 .carousel-caption h5 {
     font-size: 24px;
     color: black;
     font-weight: bold;
 }
+
 .carousel-caption p {
     font-size: 19px;
     color: black;
@@ -20,12 +21,13 @@
     width: 40%;
     margin: auto;
     border-radius: 5px;
-    background: rgb(170,197,39);
-    background: radial-gradient(circle, rgba(170,197,39,1) 0%, rgba(249,252,249,1) 100%);
+    background: rgb(170, 197, 39);
+    background: radial-gradient(circle, rgba(170, 197, 39, 1) 0%, rgba(249, 252, 249, 1) 100%);
     margin-top: 50px;
     margin-bottom: 50px;
     /* transform: rotate(10deg); */
 }
+
 .services {
     text-align: center;
     margin: 20px 0 0 0;
@@ -37,12 +39,14 @@
 .card {
     width: 30rem;
 }
+
 .card img {
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 }
+
 .card:hover img {
     -webkit-transform: scale(0.8);
     transform: scale(1);
@@ -51,14 +55,17 @@
 .card-body {
     margin: 7px 0 7px 0;
 }
+
 .list-group-item {
     margin: 5px 0 0 15px;
     color: #163020;
 }
+
 .card-img-top {
     width: 479px;
     height: 379px;
 }
+
 .card-title {
     color: #163020;
     margin-bottom: 20px;
@@ -67,12 +74,14 @@
     padding: 12px 14px;
     color: #f2f2f2;
 }
+
 .card-text {
     margin-top: 5px;
     font-weight: 600;
     font-size: 21px;
     text-align: center;
 }
+
 .card-link {
     color: #163020;
 }
@@ -112,137 +121,14 @@
 .ourOffice {
     display: none;
 }
+
 .officeHeading {
     display: none;
 }
+
 .office {
     display: none;
 }
-
-/* Container for splitting the screen into two parts */
-.screen-container {
-    display: flex;
-    height: 100vh; /* Full viewport height */
-    flex-direction: row; /* Side by side on desktop */
-  }
-  
-  /* Left panel for fancy messages */
-  .left-panel {
-    flex: 1; /* Take up half the width */
-    background: linear-gradient(135deg, #2a4a37, #507760); /* Green gradient */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    padding: 20px;
-  }
-  
-  /* Headline styling */
-  .headline {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Arial Black', sans-serif;
-    letter-spacing: 2px;
-  }
-  
-  /* Message styling */
-  .message {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 10px;
-    font-family: 'Comic Sans MS', sans-serif;
-    animation: fadeIn 2s ease-in-out;
-  }
-  
-  /* Right panel for the video */
-  .right-panel {
-    flex: 1; /* Take up half the width */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f0f0f0; /* Light background for contrast */
-  }
-  
-  /* Video container */
-  .video-container {
-    width: 600px; /* Fixed width and height for square video */
-    height: 600px;
-    padding: 10px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid white; /* Adjust thickness and color as needed */
-    background: black;
-  }
-  
-  video {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-
-  .message {
-    font-size: 1.5rem; /* Adjust if needed */
-    text-align: center; /* Centered text */
-    margin-bottom: 10px; /* Space between messages */
-    font-family: 'Comic Sans MS', sans-serif; /* Consistent font */
-    animation: fadeIn 2s ease-in-out; /* Fade-in animation */
-  }
-  
-  
-  /* Fancy fade-in animation for messages */
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Media Query for mobile responsiveness */
-  @media screen and (max-width: 768px) {
-    /* Stack the panels vertically on mobile */
-    .screen-container {
-      flex-direction: column;
-    }
-  
-    /* Make left panel take up less space on mobile */
-    .left-panel, .right-panel {
-      flex: none;
-      width: 100%;
-      height: 50vh;
-    }
-  
-    /* Adjust headline and message sizes for mobile */
-    .headline {
-      font-size: 2rem;
-      letter-spacing: 1px;
-    }
-  
-    .message {
-      font-size: 1.2rem;
-    }
-  
-    /* Resize video container for mobile */
-    .video-container {
-      width: 100%;
-      height: auto;
-      max-width: 90%; /* Keep some padding on smaller screens */
-    }
-  
-    video {
-      width: 100%;
-      height: auto;
-    }
-  }  
 
 @media screen and (max-width: 480px) {
     .ourOffice {
@@ -250,11 +136,12 @@
         width: 100%;
         margin: auto;
         border-radius: 5px;
-        background: rgb(170,197,39);
-        background: radial-gradient(circle, rgba(170,197,39,1) 0%, rgba(249,252,249,1) 100%);
+        background: rgb(170, 197, 39);
+        background: radial-gradient(circle, rgba(170, 197, 39, 1) 0%, rgba(249, 252, 249, 1) 100%);
         margin-top: 50px;
         margin-bottom: 50px;
     }
+
     .officeHeading {
         display: block;
         text-align: center;
@@ -263,55 +150,69 @@
         width: 100%;
         margin: auto;
     }
+
     .office {
         display: block;
     }
+
     .d-flex {
         flex-direction: column;
     }
+
     .card {
         width: 21rem;
         margin: 25px auto;
     }
+
     .card-img-top {
         width: 100%;
         height: auto;
     }
+
     .card-body {
         margin: 15px;
     }
+
     .list-group-item {
         margin: 5px 0 5px 15px;
     }
+
     .card-text {
         margin-top: 5px;
     }
+
     .carousel-caption {
         color: #163020;
         background-color: #f2f2f2;
         border-radius: 10px;
     }
+
     .carousel-caption h5 {
         font-size: 23px;
         color: black;
         font-weight: bold;
         padding: 4px 6px;
     }
+
     .carousel-caption p {
         font-size: 16px;
         color: black;
         /* font-weight: bold; */
         padding: 4px 6px;
     }
+
     @media (max-width: 576px) {
         .carousel-item img {
-            height: 300px; /* Adjust the height as needed */
+            height: 300px;
+            /* Adjust the height as needed */
         }
     }
+
     .ourServices {
         margin-top: 160px;
         width: 100%;
     }
+
     .services {
         text-align: center;
         margin: 20px 0 0 0;
@@ -319,14 +220,18 @@
         width: 100%;
         margin: auto;
     }
+
     .card img {
-        -webkit-transform: scale(1); /* Set the default scale for mobile devices */
+        -webkit-transform: scale(1);
+        /* Set the default scale for mobile devices */
         transform: scale(1);
     }
+
     .card:hover img {
         -webkit-transform: scale(0.8);
         transform: scale(0.8);
     }
+
     .card-text {
         margin-top: 5px;
         font-weight: 600;
@@ -344,4 +249,171 @@
 .carousel-fade .carousel-item.active {
     opacity: 1;
     transition: opacity 1s ease-in-out;
+}
+
+.carousel-item img {
+    margin-top: 50px;
+    height: 600px;
+    /* Set the desired fixed height */
+    object-fit: cover;
+    /* Ensures the image covers the area while maintaining aspect ratio */
+    width: 100%;
+    /* Ensures the width of the image matches the carousel's width */
+}
+
+/* General styling for the section */
+.works {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the headline */
+.headline {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the message paragraph */
+.message {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #495057;
+    margin-bottom: 50px;
+}
+
+.message strong {
+    color: #007bff;
+}
+
+.phoneWorks {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .headline {
+        font-size: 2rem;
+    }
+
+    .message {
+        font-size: 1rem;
+    }
+
+    .col-md-4 iframe {
+        width: 100%;
+        height: auto;
+    }
+    .works {
+        display: none;
+    }
+    /* Styling for the section */
+    .phoneWorks {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        background: #f4f4f4; /* Light gray background */
+        text-align: center;
+    }
+
+    .phoneWorks h1 {
+        margin-top: 30px;
+        font-family: 'Arial', sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #2c3e50; /* Dark gray text color */
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        background: linear-gradient(45deg, #4A90E2, #9B1C4E); /* Blue to Maroon gradient */
+        -webkit-background-clip: text; /* Chrome, Safari */
+        -moz-background-clip: text; /* Firefox */
+        -ms-background-clip: text; /* Internet Explorer */
+        background-clip: text; /* Standard */
+        color: transparent; /* Make the text color transparent to show the gradient */
+        animation: slideInFromLeft 1s ease-out;
+    }
+
+    /* Animation for h1 */
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    /* Styling for the video container */
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* Aspect ratio for 16:9 */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #fff;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .ourServices {
+        width: 100%;
+        margin: auto;
+        border-radius: 5px;
+        background: rgb(170, 197, 39);
+        background: radial-gradient(circle, rgba(170, 197, 39, 1) 0%, rgba(249, 252, 249, 1) 100%);
+        margin-top: 50px;
+        margin-bottom: 50px;
+        /* transform: rotate(10deg); */
+    }
+}
+
+.right-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7; /* Light background color */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/* Styling the video container */
+.video-container {
+    width: 440px; /* Fixed width */
+    height: 480px; /* Fixed height */
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.green-earth {
+    font-size: 20px;
+    color: #27ae60; /* Green color */
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
